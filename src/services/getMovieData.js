@@ -1,35 +1,15 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import conn from './services/conn';
+import API_KEY from './conn';
 
-const[movieData, setMovieData] = useState({
-    ImgPath: '',
-    Title: '',
-    ReleaseDate: '',
-    Rating: '',
-    Description: ''
-  });
+    export default async function getMovieData(movieId) {
+    const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`
+      try {
+          let resp = await axios.get(url);
+          return resp.data;
+      } catch (e) {
 
+      } finally {
 
-function getInfo () {
-    const [movieData, setMovieData] = useState([]);
-
-    useEffect(() => {
-    getMovieData("movie");
-    }, []);
-
-    async function getMovieData(movieId) {
-        const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${conn}`
-        try {
-            let resp = await axios.get(url);
-            console.log(resp.data.results);
-            setMovieData(resp.data.results);
-        } catch (e) {
-
-        } finally {
-
-        }
-    }
-}
-
-export default getInfo;
+      }
+  }
