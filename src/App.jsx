@@ -1,8 +1,6 @@
 import './assets/css/App.css';
-import ControlledCarousel from './components/ControlledCarousel';
-
-// var name; Minha ideia, inicialmente é utilizar uma variável nome que vai receber o valor (nome do filme) e inserir na url da api. Por conta disso optei escrever para que eu não esqueça. Posteriormente, irei excluir este comentário e provavelmente o fetch abaixo. 
-// fetch(`https://api.themoviedb.org/3/movie/${this.state.name}550?api_key=756bf41a452aae1cce2c46c74f2f9561`)
+import MovieSection from './components/MovieSection';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -13,29 +11,18 @@ function App() {
         <hr className='hr'></hr>
         <h2>Seleção de filmes</h2>
         <p>
-          Todas as informações dos filmes foram buscadas utillizando a API do The Movie Database (TMDB). 
+          Todas as informações dos filmes foram buscadas utillizando a API do The Movie Database (TMDB).
         </p>
         <hr className='hr'></hr>
+        <MovieSection title={'Ação'} moviesId={[100, 200, 300, 400]}/>
+        <hr className='hr'></hr>
+        <MovieSection title={'Comédia'} moviesId={[102, 202, 302, 402]}/>
+        <hr className='hr'></hr>
+        <MovieSection title={'Terror'} moviesId={[101, 201, 301, 401]}/>
+        <hr className='hr'></hr>
       </nav>
-      <section>
-        <h2>Ação</h2>
-        <hr className='hr'></hr>
-        <ControlledCarousel/>
-      </section>
-      <section>
-        <h2>Ficção</h2>
-        <hr className='hr'></hr>
-        <ControlledCarousel/>
-      </section>
-      <section>
-        <h2>Baseado em fatos reais</h2>
-        <hr className='hr'></hr>
-        <ControlledCarousel/>
-      </section>
     </>
   )
 }
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default App

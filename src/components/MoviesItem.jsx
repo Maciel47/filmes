@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 import getMovieData from '../services/getMovieData';
 
-function CarouselItem (props) {
+function MoviesItem (props) {
 
     const[movieData, setMovieData] = useState({
         poster_path: '',
@@ -11,7 +10,7 @@ function CarouselItem (props) {
     });
     
     async function getData () {
-        let data = await getMovieData(props.movieId);
+        let data = await getMovieData(props.moviesId);
         console.log(data)
         setMovieData({
             ...movieData,
@@ -25,12 +24,6 @@ function CarouselItem (props) {
      }, [])
 
     return (
-        // <Carousel.Item>
-        //     <Carousel.Caption>
-        //         <h3>{props.name}</h3>
-        //         <p>{props.overview}</p>
-        //     </Carousel.Caption>
-        // </Carousel.Item>
         <div>
             <h2>{movieData.original_title}</h2>
             <p>{movieData.overview}</p>
@@ -38,4 +31,6 @@ function CarouselItem (props) {
     )
 }
 
-export default CarouselItem;
+
+
+export default MoviesItem;
