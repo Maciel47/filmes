@@ -21,8 +21,8 @@ export default API_KEY;
 Feito isso, basta instalar as dependências e bibliotecas que o projeto estará pronto para uso. 
 
 ## 🔎 Observações
-- Os botões abaixo dos filmes não funcionam. Tratam-se de uma ideia da qual não tenho conhecimento para implementar ainda. A ideia consiste em o usuário ser enviado a página do respectivo filme na TMDB (The Movie Database), porém, como está sendo buscado da API, cada link teria de ser personalizado, e para isso, seria necessário realizar uma nova busca de forma eficiente para buscar o filme de acordo com o id dele. Como trata-se de um processo complexo para mim no momento, fica na ideia a implementação futura, ou até mesmo a realização deste processo em outro projeto futuramente.
-- O projeto foi desenvolvido em inglês pois ao buscar o filme, ele retorna a informação em inglês. É possível que na API tenha um outro campo em que busque os filmes já com a tradução e neste caso, seria uma questão de estudar a fundo a API. No outro caso, só há a possibilidade de buscar em inglês e portanto eu, até o momento, não sei como fazer a tradução de um site através do desenvolvimento. 
+- Os botões abaixo dos filmes não funcionam. Tratam-se de uma ideia que será implementada no futuro, mas mesmo sem essa funcionalidade, consegui atingir o resultado desejado do projeto.
+- O projeto foi desenvolvido em inglês pois os dados recebidos da API são em inglês. É possível que a API retorne os dados traduzidos (requer um estudo mais profundo da API). Também há a possibilidade de realizar a tradução do site de alguma maneira (não tenho conhecimento). Independentemente, o resultado desejado do projeto foi alcançado, tornando estas duas observações um "plus" que pode vir a ser implementações futuras, ou que serão exploradas em outros projetos.
 
 ## 🛠 Tecnologias
 * [npm](https://www.npmjs.com/) - Gerenciador de pacotes
