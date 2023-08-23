@@ -33,7 +33,11 @@ function MoviesItem(props) {
             <section>
                 <h2>{movieData.title}</h2>
                 <p>{movieData.overview}</p>
-                <Button variant="primary">more about: {movieData.original_title}</Button>
+                {/* en-english */}
+                {/* <Button variant="primary">more about: {movieData.original_title}</Button> */}
+
+                {/* pt-br */}
+                <Button variant="primary">mais sobre: {movieData.title}</Button>
             </section>
         </section>
     )
