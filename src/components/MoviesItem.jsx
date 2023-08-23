@@ -7,6 +7,7 @@ function MoviesItem(props) {
     const [movieData, setMovieData] = useState({
         poster_path: '',
         original_title: '',
+        title: '',
         overview: '',
     });
 
@@ -17,6 +18,7 @@ function MoviesItem(props) {
             ...movieData,
             poster_path: data.poster_path,
             original_title: data.original_title,
+            title: data.title, //pt-br
             overview: data.overview
         })
     }
@@ -29,7 +31,7 @@ function MoviesItem(props) {
         <section className='moviesSection'>
             <img src={`https://image.tmdb.org/t/p/original${movieData.poster_path}`} />
             <section>
-                <h2>{movieData.original_title}</h2>
+                <h2>{movieData.title}</h2>
                 <p>{movieData.overview}</p>
                 <Button variant="primary">more about: {movieData.original_title}</Button>
             </section>
