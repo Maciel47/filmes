@@ -3,7 +3,11 @@
 
 Projeto que busca filmes utilizando a API [The Movie Database](https://www.themoviedb.org/).
 
-Vídeo do do projeto: 
+Vídeo do projeto pt-br: 
+
+https://github.com/Maciel47/filmes/assets/66790565/341fa54a-eb63-43ed-bb84-e86ed6b41bea
+
+Vídeo do projeto em inglês:
 
 https://github.com/Maciel47/filmes/assets/66790565/d51ab56a-3b91-4912-8066-ad96db80683a
 
@@ -22,7 +26,8 @@ Feito isso, basta instalar as dependências e bibliotecas que o projeto estará 
 
 ## 🔎 Observações
 - Os botões abaixo dos filmes não funcionam. Tratam-se de uma ideia que será implementada no futuro, mas mesmo sem essa funcionalidade, consegui atingir o resultado desejado do projeto.
-- O projeto foi desenvolvido em inglês pois os dados recebidos da API são em inglês. É possível que a API retorne os dados traduzidos (requer um estudo mais profundo da API). Também há a possibilidade de realizar a tradução do site de alguma maneira (não tenho conhecimento). Independentemente, o resultado desejado do projeto foi alcançado, tornando estas duas observações um "plus" que pode vir a ser implementações futuras, ou que serão exploradas em outros projetos.
+- O projeto foi desenvolvido originalmente em inglês pois os dados recebidos da API são em inglês por padrão. Atualmente, ele está disponível em português. Caso deseje alterar, basta mudar os comentários(você irá entender ao verificar o código). Estou ciente de que é necessário organizar ambas as linguagens e pretendo fazer isso. No momento, será através dos comentários.
+- É necessário criar tratativas para a busca de dados. Porém, como o resultado desejado do projeto foi atingido, estas observações serão implementadas futuramente.
 
 ## 🛠 Tecnologias
 * [npm](https://www.npmjs.com/) - Gerenciador de pacotes
