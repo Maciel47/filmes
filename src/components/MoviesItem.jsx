@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import getMovieData from '../services/getMovieData';
 import Button from 'react-bootstrap/Button';
+import { i18n } from '../assets/translate/i18n';
 
 function MoviesItem(props) {
 
@@ -17,8 +18,7 @@ function MoviesItem(props) {
         setMovieData({
             ...movieData,
             poster_path: data.poster_path,
-            original_title: data.original_title,
-            title: data.title, //pt-br
+            title: data.title,
             overview: data.overview
         })
     }
@@ -33,11 +33,7 @@ function MoviesItem(props) {
             <section>
                 <h2>{movieData.title}</h2>
                 <p>{movieData.overview}</p>
-                {/* en-english */}
-                {/* <Button variant="primary">more about: {movieData.original_title}</Button> */}
-
-                {/* pt-br */}
-                <Button variant="primary">mais sobre: {movieData.title}</Button>
+                <Button variant="primary">{i18n.t('buttons.learnMoreMovie') + movieData.title}</Button>
             </section>
         </section>
     )

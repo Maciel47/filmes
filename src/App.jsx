@@ -2,44 +2,27 @@ import './assets/css/App.css';
 import MovieSection from './components/MovieSection';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
+import { i18n } from './assets/translate/i18n';
 
 function App() {
 
   return (
     <>
-      {/* en-english */}
-      {/* <h1>Movies</h1>
+      <h1>{i18n.t('pageTitle.title')}</h1>
       <hr className='hr'></hr>
       <nav>
-        <h2>Movie Selection</h2>
-        <p className='descTitle'>
-          All movie information was retrieved using The Movie Database (TMDB) API.
-        </p>
+        <h2>{i18n.t('pageTitle.subTitle')}</h2>
+        <p className='descTitle'>{i18n.t('pageDesc.desc')}</p>
         <a href='https://www.themoviedb.org/' target='_blank'>
-          <Button variant="primary">Learn more about the API</Button>
+          <Button variant="primary">{i18n.t('buttons.learnMorePage')}</Button>
         </a>
-        <hr className='hr'></hr>
       </nav>
-      <MovieSection title={'Science Fiction'} moviesId={[9426, 1903, 5548, 218, 105]} />
-      <MovieSection title={'Action'} moviesId={[238, 101, 68718, 16869, 500]} />
-      <MovieSection title={'Drama'} moviesId={[418533, 13, 424, 278, 637]} /> */}
-
-      {/* pt-br */}
-      <h1>Filmes</h1>
-      <hr className='hr'></hr>
-      <nav>
-        <h2>Seleção de filmes</h2>
-        <p className='descTitle'>
-          Todas as informações dos filmes foram buscadas utilizando a API The Movie Database (TMDB).
-        </p>
-        <a href='https://www.themoviedb.org/' target='_blank'>
-          <Button variant="primary">Saiba mais sobre a API</Button>
-        </a>
-        <hr className='hr'></hr>
-      </nav>
-      <MovieSection title={'Ficção científica'} moviesId={[9426, 1903, 5548, 218, 105]} />
-      <MovieSection title={'Ação'} moviesId={[238, 101, 68718, 16869, 500]} />
-      <MovieSection title={'Drama'} moviesId={[418533, 13, 424, 278, 637]} />
+      <h2>{i18n.t('movieSectionTitle.firstSection')}</h2>
+      <MovieSection moviesId={[9426, 1903, 5548, 218, 105]} />
+      <h2>{i18n.t('movieSectionTitle.secondSection')}</h2>
+      <MovieSection moviesId={[238, 101, 68718, 16869, 500]} />
+      <h2>{i18n.t('movieSectionTitle.thirdSection')}</h2>
+      <MovieSection moviesId={[418533, 13, 424, 278, 637]} />
     </>
   )
 }
