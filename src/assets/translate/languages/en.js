@@ -10,7 +10,11 @@ const messages = {
             },
             buttons: {
                 learnMorePage: 'Learn more about the API',
-                learnMoreMovie: 'more about: '
+                learnMoreMovie: 'more about: ',
+                searchMovie: 'Search for movies',
+                personalGallery: 'Personal gallery',
+                returnButton: 'Return to the home page',
+                goToButton: 'Got to: '
             },
             movieSectionTitle: {
                 firstSection: 'Science Fiction',
@@ -19,6 +23,17 @@ const messages = {
             },
             urlLng: {
                 language: 'en-US'
+            },
+            personalGalleryPage: {
+                title: 'My personal gallery',
+                desc: 'Here are some movies that I have selected. They are separated by three genres respectively: Science fiction, action and drama.',
+            },
+            searchMoviePage: {
+                title: 'Search for the movies you want',
+                desc: 'As you search for the movies, they will be listed below',
+            },
+            warningMessages: {
+                inProgress: 'Page under construction...',
             }
         }
     }

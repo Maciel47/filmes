@@ -1,7 +1,6 @@
 import MoviesItem from './MoviesItem';
 
 export default function MovieSection(props) {
-
     return (
         <section>
             <h2>{props.title}</h2>
@@ -13,7 +12,3 @@ export default function MovieSection(props) {
         </section>
     )
 }
-
-
-
-

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import getMovieData from '../services/getMovieData';
 import Button from 'react-bootstrap/Button';
+
+import getMovieData from '../services/getMovieData';
 import { i18n } from '../assets/translate/i18n';
 
 function MoviesItem(props) {
-
     const [movieData, setMovieData] = useState({
         poster_path: '',
         original_title: '',
@@ -33,12 +33,10 @@ function MoviesItem(props) {
             <section>
                 <h2>{movieData.title}</h2>
                 <p>{movieData.overview}</p>
-                <Button variant="primary">{i18n.t('buttons.learnMoreMovie') + movieData.title}</Button>
+                <Button variant="info">{i18n.t('buttons.learnMoreMovie') + movieData.title}</Button>
             </section>
         </section>
     )
 }
-
-
 
 export default MoviesItem;

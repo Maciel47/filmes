@@ -9,9 +9,10 @@
   text-align: center;
 }
 
-h1 {
+#pageMainTitle {
   border-radius: 30px;
-  background-color: #722cf9;
+  color: #1b1b1d;
+  background-color: #0dcaf1;
 }
 
 nav {
@@ -20,6 +21,12 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 55px;
+}
+
+#navButton {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 p {
