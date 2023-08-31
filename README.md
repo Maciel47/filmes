@@ -26,7 +26,6 @@ Feito isso, basta instalar as dependências e bibliotecas que o projeto estará 
 
 ## 🔎 Observações
 - Os botões abaixo dos filmes não funcionam. Tratam-se de uma ideia que será implementada no futuro, mas mesmo sem essa funcionalidade, consegui atingir o resultado desejado do projeto.
-- O projeto foi desenvolvido originalmente em inglês pois os dados recebidos da API são em inglês por padrão. Atualmente, ele está disponível em português. Caso deseje alterar, basta mudar os comentários(você irá entender ao verificar o código). Estou ciente de que é necessário organizar ambas as linguagens e pretendo fazer isso. No momento, será através dos comentários.
 - É necessário criar tratativas para a busca de dados. Porém, como o resultado desejado do projeto foi atingido, estas observações serão implementadas futuramente.
 
 ## 🛠 Tecnologias

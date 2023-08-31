@@ -17,6 +17,9 @@ const messages = {
                 secondSection: 'Ação',
                 thirdSection: 'Drama',
             },
+            urlLng: {
+                language: 'pt-BR'
+            }
         }
     }
 }
