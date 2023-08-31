@@ -3,13 +3,9 @@
 
 Projeto que busca filmes utilizando a API [The Movie Database](https://www.themoviedb.org/).
 
-Vídeo do projeto pt-br: 
+Vídeo do projeto:
 
-https://github.com/Maciel47/filmes/assets/66790565/341fa54a-eb63-43ed-bb84-e86ed6b41bea
-
-Vídeo do projeto em inglês:
-
-https://github.com/Maciel47/filmes/assets/66790565/d51ab56a-3b91-4912-8066-ad96db80683a
+https://github.com/Maciel47/filmes/assets/66790565/f2ebff24-6a0f-42d2-8689-bb5dd4d0b6f2
 
 ## 📝 Instruções
 Caso deseje testar o projeto em sua máquina, basta seguir estes passos: 
@@ -25,6 +21,7 @@ export default API_KEY;
 Feito isso, basta instalar as dependências e bibliotecas que o projeto estará pronto para uso. 
 
 ## 🔎 Observações
+- O projeto está disponível em português e em inglês (Funciona de acordo com a configuração do seu navegador).
 - Os botões abaixo dos filmes não funcionam. Tratam-se de uma ideia que será implementada no futuro, mas mesmo sem essa funcionalidade, consegui atingir o resultado desejado do projeto.
 - É necessário criar tratativas para a busca de dados. Porém, como o resultado desejado do projeto foi atingido, estas observações serão implementadas futuramente.
 
@@ -36,5 +33,5 @@ Feito isso, basta instalar as dependências e bibliotecas que o projeto estará 
 
 ## 🤝 Contribuições
 
-Segue o perfil no Github: [Davi Torelli](https://github.com/DaviTorelli).
-Auxiliou com a busca das informações na API e a manipulação dos dados recebidos. 
+Perfil do Github: [Davi Torelli](https://github.com/DaviTorelli).
+Além de sugerir a ideia para desenvolver, auxiliou com a busca das informações na API e a manipulação dos dados recebidos. 
