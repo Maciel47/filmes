@@ -6,6 +6,7 @@ import { Button } from 'react-bootstrap';
 
 import { i18n } from "../assets/translate/i18n";
 import NaviHeader from '../components/NavHeader';
+import InputSearch from '../components/InputSearch';
 
 const SearchMovie = () => {
     return (
@@ -25,7 +26,7 @@ const SearchMovie = () => {
             <h2>{i18n.t('searchMoviePage.title')}</h2>
             <p className='descTitle'>{i18n.t('searchMoviePage.desc')}</p>
             <br/><br/>
-            <h1>{i18n.t('warningMessages.inProgress')}</h1>
+            <InputSearch />
         </>
     );
 }

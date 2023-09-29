@@ -1,12 +1,14 @@
-* {
-  color: rgb(218, 219, 219);
-  background-color: #1b1b1d;
-}
-
 #root {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: rgb(218, 219, 219);
+  background-color: #1b1b1d;
+}
+
+html {
+  color: rgb(218, 219, 219);
+  background-color: #1b1b1d
 }
 
 #pageMainTitle {
@@ -57,4 +59,14 @@ img {
 img:hover {
   cursor: pointer;
   box-shadow: 10px 10px 5px #63636388;
+}
+
+input {
+  padding: 7px;
+  width: 30%;
+  color: rgb(218, 219, 219);
+  background-color: #1b1b1b;
+  border: none;
+  border-radius: 50px 50px 50px 50px;
+  border-bottom: 1px solid rgb(105, 105, 105);
 }

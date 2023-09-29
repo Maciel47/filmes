@@ -1,6 +1,7 @@
 import axios from 'axios';
-import API_KEY from './connKey';
+import API_KEY from './tmdbTokenAPI';
 import { i18n } from '../assets/translate/i18n';
+import errorWarning from './errorWarning';
 
 export default async function getMovieData(movieId) {
     const url = `https://api.themoviedb.org/3/movie/${movieId}?language=${i18n.t('urlLng.language')}`
@@ -11,8 +12,10 @@ export default async function getMovieData(movieId) {
             }
         });
         return resp.data;
-    } catch (e) {
-
+    } catch (errorValue) {
+        return (
+            errorValue = errorWarning
+        )
     } finally {
 
     }
