@@ -6,17 +6,16 @@ import errorWarning from '../services/errorWarning';
 
 export default function InputSearch() {
     const [movieName, setMovieName] = useState('')
-    const [result, setResult] = useState(null);
+    const [result, setResult] = useState('');
 
     const handleInputChange = (e) => {
-        const typedName = e.target.value;
-        const convertedName = typedName.replace(/ /g, '+');
-        setMovieName(convertedName);
-        console.log(movieName)
+        const movieName = e.target.value;
+        setMovieName(movieName);
     }
 
     async function getData() {
-        const url = `https://api.themoviedb.org/3/search/movie?query=${movieName}`
+        const convertedName = movieName.replace(/ /, '+');
+        const url = `https://api.themoviedb.org/3/search/movie?query=${convertedName}`
         try {
             let resp = await axios.get(url, {
                 headers: {
@@ -35,10 +34,20 @@ export default function InputSearch() {
 
         }
     }
+
     return (
         <>
             <input className='input-search' placeholder={i18n.t('searchMoviePage.input')} value={movieName} onChange={handleInputChange} />
             <button onClick={getData}>Buscar</button>
+            {result.length > 0 ? (
+                <ul>
+                    {result.map((item) => (
+                        <li key={item.results}>{item.original_title}</li>
+                    ))}
+                </ul>
+            ) : (
+                <p></p>
+            )}
         </>
     )
 }
